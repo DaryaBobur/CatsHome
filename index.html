@@ -4,14 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>CatsHome</title>
   </head>
   <body>
-    <header>
-      <a href="">
-        <img src="./img/logo.svg" alt="logo" width="24" height="24" />
+    <header class="header">
+      <a href="index.html" class="logo__link">
+        <img
+          class="logo__img"
+          src="./img/logo.svg"
+          alt="logo"
+          width="24"
+          height="24"
+        />
         Котодім
       </a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="">Обрати котика</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="">Задонатити котикам</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <main>
+      <section class="hero">
+        <img class="hero__img" src="./img/picture1@2x.jpg" alt="cat" />
+        <div class="hero__desc">
+          <h2 class="hero__desc-title">Привіт, людино</h2>
+          <p class="hero__desc-text">
+            Бракує в житті шовкових лапок, м’якенького пухнастого животика,
+            теплого муррркотіння й веселого розгардіяшу?Візьми собі котика.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
