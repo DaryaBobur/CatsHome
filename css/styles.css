@@ -15,6 +15,12 @@ ul {
   padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -120,4 +126,9 @@ ul {
 
 .three-kittens__list {
   display: flex;
+  list-style: none;
 }
+
+/* .three-kittens__item:not(:last-child) {
+margin-right: 40px;
+} */
