@@ -195,3 +195,9 @@ img {
 .cat-family__img {
   border-radius: 16px;
 }
+
+footer {
+  padding-bottom: 48px;
+  padding-top: 48px;
+  background-color: #0F3F3C;
+}
