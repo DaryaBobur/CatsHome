@@ -155,3 +155,43 @@ img {
   font-size: 16px;
   line-height: 1.5;
 }
+
+.cat-family {
+  padding-bottom: 60px;
+}
+
+.cat-family__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  margin-bottom: 8px;
+}
+
+.cat-family__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.cat-family__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+}
+.cat-family__item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.cat-family__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.cat-family__item {
+  flex-basis: calc((100% - 12 * 8px) / 6);
+  margin-bottom: 16px;
+}
+
+.cat-family__img {
+  border-radius: 16px;
+}
