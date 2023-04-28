@@ -72,6 +72,12 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: inherit;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list__link:hover, 
+.nav-list__link:focus {
+color: #f07f2e;
 }
 
 .hero {
@@ -204,9 +210,11 @@ footer {
 
 .footer__wrap {
   display: flex;
+  justify-content: space-between;
 }
 
-.logo-footer {
+.logo-footer,
+.footer-social__title {
   margin-bottom: 8px;
 }
 
@@ -216,23 +224,30 @@ footer {
   color: #ffffff;
 }
 
-.footer__desc {
-  margin-right: 408px;
-}
-
-.footer__social__title {
+.footer-social__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  text-align: right;
 
   color: #ffffff;
 }
 
 .footer-social__icon {
   fill: #ffffff;
-} 
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .footer-social__list {
   list-style: none;
+  display: flex;
 }
-/* 32px */
+
+.footer-social__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.footer-social__icon:hover,
+.footer-social__icon:focus {
+  fill: #F07F2E;
+}
