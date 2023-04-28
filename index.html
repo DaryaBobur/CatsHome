@@ -14,12 +14,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>CatsHome</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="flip-right">
       <div class="header__container container">
         <a href="index.html" class="logo__link">
           <svg class="logo__img" width="24" height="24">
@@ -43,7 +44,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" data-aos="flip-right" data-aos-delay="350">
         <img class="hero__img" src="./img/picture1@2x.jpg" alt="cat" />
         <div class="hero__desc">
           <h2 class="hero__desc-title">Привіт, людино</h2>
@@ -53,7 +54,7 @@
           </p>
         </div>
       </section>
-      <section class="three-kittens">
+      <section class="three-kittens" data-aos="flip-right"  data-aos-delay="350">
         <div class="container">
           <h2 class="three-kittens__title">
             Ці друзяки готові приймати твою любов і піклування
@@ -95,7 +96,7 @@
           </ul>
         </div>
       </section>
-      <section class="cat-family">
+      <section class="cat-family" data-aos="flip-right" data-aos-delay="350">
         <div class="container">
           <h2 class="cat-family__title">Котики, які вже знайшли сім’ю</h2>
           <p class="cat-family__text">
@@ -144,7 +145,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer data-aos="flip-right" data-aos-delay="350">
       <div class="footer__wrap container">
         <div>
           <svg class="logo__img logo-footer" width="24" height="24">
@@ -207,5 +208,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
